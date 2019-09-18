@@ -1,0 +1,594 @@
+@charset "ISO-8859-1";
+
+ @import
+	url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css)
+	;
+
+
+html {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	/* height: 100%; */
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	/* height: 100%; */
+	font-family: 'Roboto';
+	/*	font-size: 32px;
+*/
+	height: 100%;
+	color: white;
+	overflow: auto;
+}
+.border-div {
+  border: solid 5px @border;
+  transition: border-width 0.3s linear;
+}
+
+.border-div:hover { border-width: 10px; }
+.content {
+	font-family: 'Comfortaa', cursive;
+}
+
+.font {
+	font-family: 'Roboto Mono';
+	font-size: 56px;
+	padding-top: 3%;
+	padding-left: 5%;
+}
+
+#main {
+	background: url("img/MainBG.jpg");
+	background-size: cover;
+}
+/* Whole Screen */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	/* background-size:100% 100%; */
+	width: 100%;
+}
+
+span {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'Roboto Mono';
+	font-weight: bold;
+}
+
+/*input[type=email] {
+	background: transparent; border-top : transparent !important;
+	border-left : transparent !important; border-right : transparent
+	!important;
+	border-bottom: 1px solid !important;  padding-left : 0;
+	outline: none;
+	border-top: transparent !important;
+	border-left: transparent !important;
+	border-right: transparent !important; border-bottom : 1px solid white
+	!important;
+	padding-left: 0;
+	font-size: 24px;
+	width:250px;
+	color: white;
+}
+
+input[type=email]:focus {
+	border-bottom: 4px solid white
+	!important;
+}*/
+input[type=email] {
+	background: transparent;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom: 1px solid;
+	padding-left: 0;
+	outline: none;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;
+	border-bottom: 1px solid white;
+	padding-left: 0;
+	font-size: 24px;
+	width: 250px;
+	color: white;
+}
+
+input[type=email]:focus {
+	border-bottom: 4px solid white;
+}
+
+a {
+	text-decoration: none;
+}
+
+.topnav {
+	display: inline-block;
+	text-align: left;
+	position: fixed;
+	background-color: black;
+	overflow: hidden;
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 60px;
+	font-size: 32px;
+	/*padding-top: 5px;*/
+	padding-left: 10px;
+}
+
+.parallax2 {
+	background-image: url("img/BG02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	text-align: justify;
+	text-justify: distribute;
+	padding-right: 45%;
+	background-attachment: fixed;
+	padding-left: 3%;
+	font-family: 'Roboto Mono';
+	font-size: 24px;
+	height: 100%;
+	color: white;
+	min-height: 100vh;
+}
+
+/*Signup*/
+#signup {
+	position: fixed;
+	font-size: 24px;
+	/*top:50%;*/
+	left: 60%;
+	right: 3%;
+	bottom: 10%;
+	font-family: 'Roboto Mono';
+	border-color: white;
+	border-width: medium;
+}
+
+.signup {
+	 border-style: groove;
+	border-color: White;
+	border-width: medium;
+	height: 200px; /* 170 */
+	padding: 24px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#signup a {
+	align-items: right;
+}
+
+ .send_me {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 24px;
+	border: 1px solid white;
+	padding: 6px;
+	align-self: right;
+    text-decoration: none;
+	 box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
+}
+
+ .send_me:hover {
+	border: 5px solid white;
+}
+
+small {
+	font-size: 24px;
+}
+
+.z {
+	z-index: 2;
+	position: absolute;
+}
+
+.contact {
+	padding-top: 5%;
+	padding-left: 4%;
+	padding-right: 8%;
+	margin: 0;
+	text-align: left;
+	/*margin-top: -32px;*/
+	background-color: black;
+	background-size: 100% 100%;
+	height: 300px;
+	font-size: 24px;
+}
+
+.margin_fix {
+	margin-top: 0;
+}
+
+.padding_eight {
+	padding: 8px;
+}
+
+/*.content{
+padding-top: 60px;
+
+padding: 8px;
+
+
+}*/
+.font_change {
+	font-family: 'Roboto';
+	font-size: 20px;
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 600px) {
+	body {
+		font-size: 24px;
+	}
+	.content {
+		padding-right: 25px !important;
+	}
+	#story {
+		text-align: justify;
+		/* Remove Space */
+		text-justify: distribute;
+		text-align-last: left;
+		/* word-spacing:-2px;  */
+	}
+	#forSignUp {
+		background: url("img/MainBG.jpg");
+		background-repeat: no-repeat;
+	}
+	#signup {
+		padding-top: 10px !important;
+		left: 0 !important;
+	}
+	.signup {
+		font-size: 20px;
+		height: 170px !important; /* 120 */
+		/* width: 300px !important; */
+		margin: 0 auto;
+		/*  padding-left: 28%!important;
+     padding-right:29%!important; */
+		/* width:100vw!important; */
+	}
+	.signup small {
+		font-size: 15px;
+	}
+	.signup a {
+		font-size: 15px;
+	}
+	.signup input[type=email] {
+		font-size: 15px;
+		border-bottom: 1px solid #e0e0e0;;
+		color: white;
+	}
+	.parallax2 {
+		font-size: 18px;
+		padding: 5%;
+	}
+	::placeholder {
+		color: #e0e0e0;
+		opacity: 1; /* Firefox */
+	}
+	input[type=email] {
+		background: transparent;
+		border-top: transparent;
+		border-left: transparent;
+		border-right: transparent;
+		border-bottom: 1px solid;
+		padding-left: 0;
+		outline: none;
+		border-top: transparent;
+		border-left: transparent;
+		border-right: transparent;
+		border-bottom: 1px solid white;
+		padding-left: 0;
+		font-size: 24px;
+		width: 150px;
+		color: white;
+	}
+	/* .contact
+{
+	top:0;
+} */
+}
+
+/* Tablet */
+@media ( max-width : 900px) {
+	body {
+		font-size: 24px;
+	}
+	/* #signup{
+	visibility: hidden;
+
+} */
+	.img {
+		width: 40px;
+		height: 40px;
+	}
+	#signup {
+		position: fixed;
+		font-size: 24px;
+		/*top:50%;*/
+		left: 60%;
+		right: 3%;
+		bottom: 10%;
+		font-family: 'Roboto Mono';
+		border-color: white;
+		border-width: medium;
+	}
+	.signup {
+		border-style: groove;
+		border-color: White;
+		border-width: medium;
+		height: 170px !important; /* 130 */
+		/* width: 300px !important; */
+		padding: 24px;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	#signup a {
+		align-items: right;
+	}
+	.send_me {
+		color: white;
+		background-color: rgba(0, 0, 0, 0.5);
+		font-size: 24px;
+		border: 1px solid white;
+		padding: 6px;
+		align-self: right;
+	}
+	.margin_fix {
+		font-size: 15px;
+	}
+	.send_me:hover {
+		border: 5px solid white;
+	}
+	small {
+		font-size: 20px;
+	}
+	.contact small {
+		padding-top: 10%;
+	}
+	.signup a {
+		font-size: 10px;
+	}
+	.signup input[type=email] {
+		font-size: 15px; /* 15px */
+		border-bottom: 1px solid #e0e0e0;
+		color: white;
+	}
+	.content {
+		padding-right: 45%;
+		text-align: justify;
+		text-justify: distribute;
+	}
+	.parallax2 {
+		font-size: 18px;
+		padding: 5%;
+	}
+	::placeholder {
+		color: #e0e0e0;
+		opacity: 1;
+		/* Firefox */
+	}
+	input[type=email] {
+		background: transparent;
+		border-top: transparent;
+		border-left: transparent;
+		border-right: transparent;
+		border-bottom: 1px solid;
+		padding-left: 0;
+		outline: none;
+		border-top: transparent;
+		border-left: transparent;
+		border-right: transparent;
+		border-bottom: 1px solid white;
+		padding-left: 0;
+		font-size: 24px;
+		width: 100px; /* 150 */
+		color: white;
+	}
+}
+
+/* landscape desktop -tablet*/
+@media ( max-width : 768px) {
+	body {
+		font-size: 32px;
+	}
+	/* #signup{
+	visibility: hidden;
+
+} */
+	.img {
+		width: 40px;
+		height: 40px;
+	}
+	#signup {
+		position: fixed;
+		font-size: 24px;
+		top: 50%;
+		left: 60%;
+		right: 3%;
+		bottom: 10%;
+		font-family: 'Roboto Mono';
+		border-color: white;
+		border-width: medium;
+	}
+	.signup {
+		border-style: groove;
+		border-color: White;
+		border-width: medium;
+		height: 100px; /* 130 */
+		/* width: 200px !important; */
+		padding: 24px;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	#signup a {
+		align-items: right;
+	}
+	.send_me {
+		color: white;
+		background-color: rgba(0, 0, 0, 0.5);
+		font-size: 24px;
+		border: 1px solid white;
+		padding: 6px;
+		align-self: right;
+	}
+	.margin_fix {
+		font-size: 15px;
+	}
+	.send_me:hover {
+		border: 5px solid white;
+	}
+	small {
+		font-size: 20px;
+	}
+	.contact small {
+		padding-top: 10%;
+	}
+	.signup a {
+		font-size: 10px;
+	}
+	.signup input[type=email] {
+		font-size: 15px;
+		border-bottom: 1px solid #e0e0e0; /* 15px */
+		color: white;
+	}
+	.content {
+		padding-right: 45%;
+		text-align: justify;
+		text-justify: distribute;
+	}
+	.parallax2 {
+		font-size: 18px;
+		padding: 5%;
+	}
+	::placeholder {
+		color: #e0e0e0;
+		opacity: 1;
+		Firefox
+	}
+	input[type=email] {
+		background: transparent;
+		border-top: transparent;
+		border-left: transparent;
+		border-right: transparent;
+		border-bottom: 1px solid;
+		padding-left: 0;
+		outline: none;
+		border-top: transparent;
+		border-left: transparent;
+		border-right: transparent;
+		border-bottom: 1px solid white;
+		padding-left: 0;
+		font-size: 24px;
+		width: 150px; /* 150 */
+		color: white;
+	}
+}
+
+/* ipad pro Laptop */
+@media ( max-width : 1200px) {
+	body {
+		font-size: 24px;
+	}
+	/* #signup{
+	visibility: hidden;
+
+} */
+	#signup {
+		position: fixed;
+		font-size: 24px;
+		/*top:50%;*/
+		left: 60%;
+		right: 3%;
+		bottom: 10%;
+		font-family: 'Roboto Mono';
+		border-color: white;
+		border-width: medium;
+	}
+	.signup {
+		border-style: groove;
+		border-color: White;
+		border-width: medium;
+		height: 170px; /* 140 */
+		width: 300px;
+		padding: 24px;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	#signup a {
+		align-items: right;
+	}
+	.send_me {
+		color: white;
+		background-color: rgba(0, 0, 0, 0.5);
+		font-size: 24px;
+		border: 1px solid white;
+		padding: 6px;
+		align-self: right;
+	}
+	.margin_fix {
+		font-size: 15px;
+	}
+	.send_me:hover {
+		border: 5px solid white;
+	}
+	small {
+		font-size: 20px;
+	}
+	.contact small {
+		padding-top: 10%;
+	}
+	.signup a {
+		font-size: 10px;
+	}
+	.signup input[type=email] {
+		font-size: 15px; /* 15px */
+		border-bottom: 1px solid #e0e0e0;
+		color: white;
+	}
+	.content {
+		padding-right: 45%;
+		text-align: justify;
+		text-justify: distribute;
+	}
+	.parallax2 {
+		font-size: 18px;
+		padding: 5%;
+	}
+	::placeholder {
+		color: #e0e0e0;
+		opacity: 1;
+		Firefox
+	}
+	input[type=email] {
+		background: transparent;
+		border-top: transparent;
+		border-left: transparent;
+		border-right: transparent;
+		border-bottom: 1px solid;
+		padding-left: 0;
+		outline: none;
+		border-top: transparent;
+		border-left: transparent;
+		border-right: transparent;
+		border-bottom: 1px solid white;
+		padding-left: 0;
+		font-size: 24px;
+		width: 100px; /* 150 */
+		color: white;
+	}
+}
+
+.ball {
+	position: absolute;
+	border-radius: 100%;
+	opacity: 0.7;
+}
+a{
+  text-decoration: none;
+}
